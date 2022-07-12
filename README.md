@@ -1,3 +1,3 @@
-# Starter
+# Hello world
 ## Documentation
 lorem ipsum
