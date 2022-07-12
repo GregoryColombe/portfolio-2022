@@ -1,0 +1,98 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-container {
+        display: flex;
+        align-items: center;
+
+        &-item {
+            display: inherit;
+            margin-left: 2rem;
+
+            > p {
+                width: fit-content;
+
+                font-size: 1.4rem;
+
+                text-align: right;
+                text-transform: uppercase;
+
+                transition: .3s;
+
+                &:hover:not(.header-container-item--name) {
+                    font-weight: bold;
+                    letter-spacing: .3rem;
+                }
+            }
+
+            > button {
+                background: none;
+                border: none;
+    
+                appearance: none;
+            }
+
+            &:first-of-type {
+                margin-left: 0;
+            }
+
+            &--name {
+                position: relative;
+                z-index: 3;
+
+                text-align: left;
+
+                opacity: 0;
+
+
+                p {
+                    width: fit-content;
+
+                    font-size: 1.4rem;
+    
+                    text-transform: uppercase;
+                }
+                
+                span {
+                    letter-spacing: -0.1rem;
+
+                    transition: .3s;
+                }
+
+                &:hover {
+                    cursor: pointer;
+
+                    span {
+                       
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@include sm { 
+    .header {
+    
+        &-container {
+           
+            &-item {
+                margin-left: 1rem;
+
+                p {
+                    max-width: fit-content;
+
+                    text-align: left;
+                }
+
+                &--name {
+                    span {
+                    }
+                }
+            }
+        }
+    }
+}
