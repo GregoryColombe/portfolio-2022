@@ -1,0 +1,79 @@
+$path: "@/assets/styles/fonts";
+
+/*
+ *
+ * Clash Display
+ *
+*/
+@font-face {
+    font-weight: 800;
+    font-family: 'Clash Display';
+    src: url($path + "/ClashDisplay/ClashDisplay-Bold.otf") format('opentype');
+}
+@font-face {
+    font-weight: 600;
+    font-family: 'Clash Display';
+    src: url($path + "/ClashDisplay/ClashDisplay-Semibold.otf") format('opentype'),
+         url($path + "/ClashDisplay/ClashDisplay-Semibold.ttf") format('truetype');
+}
+@font-face {
+    font-weight: 500;
+    font-family: 'Clash Display';
+    src: url($path + "/ClashDisplay/ClashDisplay-Medium.otf") format('opentype'),
+         url($path + "/ClashDisplay/ClashDisplay-Medium.ttf") format('truetype');
+}
+@font-face {
+    font-weight: 400;
+    font-family: 'Clash Display';
+    src: url($path + "/ClashDisplay/ClashDisplay-Regular.otf") format('opentype');
+}
+@font-face {
+    font-weight: 300;
+    font-family: 'Clash Display';
+    src: url($path + "/ClashDisplay/ClashDisplay-Light.otf") format('opentype'),
+         url($path + "/ClashDisplay/ClashDisplay-Light.ttf") format('truetype');
+}
+@font-face {
+    font-weight: 200;
+    font-family: 'Clash Display';
+    src: url($path + "/ClashDisplay/ClashDisplay-Extralight.otf") format('opentype'),
+         url($path + "/ClashDisplay/ClashDisplay-Extralight.ttf") format('truetype');
+}
+
+/*
+ *
+ * Mak
+ *
+*/
+@font-face {
+    font-weight: 800;
+    font-family: 'Mak';
+    src: url($path + "/Mak/MAK-Bold.otf") format('opentype');
+}
+@font-face {
+    font-weight: 400;
+    font-family: 'Mak';
+    src: url($path + "/Mak/MAK-Regular.otf") format('opentype');
+}
+
+/*
+ *
+ * GT America
+ *
+*/
+@font-face {
+    font-weight: 800;
+    font-family: 'GT America';
+    src: url($path + "/GTAmerica/GTAmerica-Bold.ttf") format('truetype');
+}
+@font-face {
+    font-weight: 800;
+    font-family: 'GT America';
+    font-style: italic;
+    src: url($path + "/GTAmerica/GTAmerica-Bold-Italic.ttf") format('truetype');
+}
+@font-face {
+    font-weight: 400;
+    font-family: 'GT America';
+    src: url($path + "/GTAmerica/GTAmerica-Regular.ttf") format('truetype');
+}

@@ -1,0 +1,32 @@
+.home-button {
+    button {
+        position: absolute;
+        bottom: 4rem;
+        left: 50%;
+    
+        padding: .5rem 2rem;
+    
+        text-transform: uppercase;
+    
+        background: none;
+        border: solid 1px white;
+    
+        transform: translateX(-50%);
+
+        transition: .3s;
+    
+        p {
+            color: white;
+            font-size: 1rem;
+        }
+    
+        &:hover {
+            background-color: white;
+            cursor: pointer;
+    
+            p {
+                color: black;
+            }
+        }
+    }
+}

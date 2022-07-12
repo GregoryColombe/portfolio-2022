@@ -1,0 +1,64 @@
+.project-list {
+    // position: relative;
+
+    display: none;
+    flex-direction: column;
+
+    // height: 100%;
+    height: calc(100% - 10vh);
+    margin-left: 5.2rem; 
+    overflow-y: scroll;
+
+    transform: translateY(10vh);
+
+    &-container {
+        display: flex;
+        flex-direction: column;
+
+        p {
+            width: fit-content;
+            margin: 2rem 0;
+
+            color: transparent;
+
+            font-weight: 600;
+            font-size: 12rem;
+
+            letter-spacing: -0.2rem;
+            text-transform: uppercase;
+
+            transition: .3s;
+            -webkit-text-stroke: 1px white;
+
+            &:hover {
+                color: white;
+
+                letter-spacing: .6rem;
+
+                cursor: pointer;
+                -webkit-text-stroke: none;
+            }
+        }
+    }
+}
+
+@include md { 
+    .project-list {
+        margin-left: 0;
+
+        &-container {
+            position: absolute;
+            bottom: 0;
+
+            p {
+                margin: 0.5rem 0;
+ 
+                font-size: 3.6rem;
+
+                &:hover {
+                    letter-spacing: .1rem;
+                }
+            }
+        }
+    }
+}

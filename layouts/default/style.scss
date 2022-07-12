@@ -1,0 +1,19 @@
+.portfolio  {
+    display: flex;
+    flex-direction: column;
+
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    padding: 2.4rem 3.2rem;
+
+    // &--container {
+    //     flex-grow: 1;
+    // }
+}
+
+@include sm {
+    .portfolio  {
+        // padding: 6.4rem 6.4rem;
+    }
+}

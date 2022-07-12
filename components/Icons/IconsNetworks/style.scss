@@ -1,0 +1,54 @@
+.icons-networks {
+    position: absolute;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    &-container {
+        display: flex;
+        flex-direction: column;
+
+        a {
+            width: 3rem;
+            height: 3rem;
+
+            margin-top: 1rem;
+
+            &:first-of-type {
+                margin-top: 0;
+            }
+
+            div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                transition: .2s;
+
+                &:hover { 
+                    padding-left: 1rem;
+
+                    transform: scale(1.2);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+
+@include sm { 
+    .icons-networks {
+        right: 3.2rem;
+        
+        &-container {
+            position: relative;
+            top: -8rem;
+
+            a {
+                width: initial;
+                height: initial;
+            }
+        }
+    }
+}

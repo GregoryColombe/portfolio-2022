@@ -1,0 +1,22 @@
+body {
+    touch-action : pinch-zoom;
+
+    .cursor {
+        display: none;
+
+        pointer-events: none;
+
+        &__ball {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 10;
+
+            mix-blend-mode: difference;
+
+            circle {
+                fill: #F7F8FA;
+            }
+        }
+    }
+}

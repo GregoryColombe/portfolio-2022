@@ -1,0 +1,31 @@
+:root { 
+  font-size: calc(100vw / 1280 * 10);
+}
+
+html,
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+
+  color: white;
+  font-family: 'GT America';
+}
+
+a { 
+  color: white;
+  text-decoration: none;
+}
+
+video {
+  display: none;
+}
+
+@include sm {
+  :root {
+    font-size: calc(100vw / 375 * 10);
+  }
+}
