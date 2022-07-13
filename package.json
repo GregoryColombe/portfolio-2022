@@ -1,0 +1,46 @@
+{
+  "name": "gregory-colombe-portfolio",
+  "version": "1.0.0",
+  "description": "lorem ipsum",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GregoryColombe/portfolio-2022.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GregoryColombe/portfolio-2022/issues"
+  },
+  "homepage": "https://github.com/GregoryColombe/portfolio-2022#readme",
+  "dependencies": {
+    "@nuxtjs/eslint-module": "^3.1.0",
+    "@nuxtjs/i18n": "^7.2.2",
+    "@nuxtjs/style-resources": "^1.2.1",
+    "@nuxtjs/stylelint-module": "^4.1.0",
+    "@nuxtjs/svg": "^0.4.0",
+    "@tweakpane/plugin-essentials": "^0.1.4",
+    "bidello": "^1.0.1",
+    "gsap": "^3.10.4",
+    "nuxt": "^2.15.8",
+    "stylelint": "^14.9.1",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-scss": "^4.3.0",
+    "three": "^0.142.0",
+    "tweakpane": "^3.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.19.0",
+    "sass": "^1.53.0",
+    "sass-loader": "^10.3.1",
+    "sass-resources-loader": "^2.2.5",
+    "stylelint-order": "^5.0.0",
+    "webpack": "^4.46.0"
+  }
+}
