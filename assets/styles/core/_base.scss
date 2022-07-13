@@ -15,6 +15,13 @@ body {
   font-family: 'GT America';
 }
 
+button {
+  background: none;
+  border: none;
+
+  appearance: none;
+}
+
 a { 
   color: white;
   text-decoration: none;
@@ -23,6 +30,15 @@ a {
 video {
   display: none;
 }
+
+/* Avoid Chrome to see Safari hack */
+@supports (-webkit-touch-callout: none) {
+  body {
+    /* The hack for Safari */
+    min-height: 100vh;
+  }
+}
+
 
 @include sm {
   :root {
