@@ -11,10 +11,10 @@ export default {
       { name: 'format-detection', content: 'telephone=no' },
       { hid: 'description', name: 'description', content: "<b>Gregory Colombe Portfolio</b> --- I'm front end developer based in Paris. Currently studying at Gobelins Paris." },
       { name: 'author', content: 'Gregory Colombe' },
-      { property: 'og:title', content: 'Gregory Colombe ~ Portfolio' },
-      { property: 'og:description', content: "<b>Gregory Colombe Portfolio</b> --- I'm front end developer based in Paris. Currently studying at Gobelins Paris." },
       { property: 'og:type', content: 'website' },
       { property: 'og:site_name', content: 'Gregory Colombe ~ Portfolio' },
+      { property: 'og:title', content: 'Gregory Colombe ~ Portfolio' },
+      { hid: 'og-desc', property: 'og:description', content: "<b>Gregory Colombe Portfolio</b> --- I'm front end developer based in Paris. Currently studying at Gobelins Paris." },
       { name: 'keywords', content: 'Gregory, Colombe, Portfolio, developer, developpeur, web, creatif, creative' }
     ],
     link: [

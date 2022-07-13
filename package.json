@@ -36,6 +36,7 @@
     "tweakpane": "^3.1.0"
   },
   "devDependencies": {
+    "@nuxtjs/eslint-config": "^10.0.0",
     "eslint": "^8.19.0",
     "sass": "^1.53.0",
     "sass-loader": "^10.3.1",
