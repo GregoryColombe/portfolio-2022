@@ -8,16 +8,22 @@ $path: "/fonts/";
 @font-face {
     font-weight: 800;
     font-family: 'GT America';
-    src: url($path + "/GTAmerica/GTAmerica-Bold.ttf") format('truetype');
+    src: url($path + "/GTAmerica/GTAmerica-Bold.ttf") format('truetype'),
+    url($path + "/GTAmerica/gtamerica-bold-webfont.woff") format('woff'),
+    url($path + "/GTAmerica/gtamerica-bold-webfont.woff2") format('woff2')
 }
 @font-face {
     font-weight: 800;
     font-family: 'GT America';
     font-style: italic;
-    src: url($path + "/GTAmerica/GTAmerica-Bold-Italic.ttf") format('truetype');
+    src: url($path + "/GTAmerica/GTAmerica-Bold-Italic.ttf") format('truetype'),
+    url($path + "/GTAmerica/gtamerica-bold-italic-webfont.woff") format('woff'),
+    url($path + "/GTAmerica/gtamerica-bold-italic-webfont.woff2") format('woff2')
 }
 @font-face {
     font-weight: 400;
     font-family: 'GT America';
-    src: url($path + "/GTAmerica/GTAmerica-Regular.ttf") format('truetype');
+    src: url($path + "/GTAmerica/GTAmerica-Regular.ttf") format('truetype'),
+    url($path + "/GTAmerica/gtamerica-regular-webfont.woff") format('woff'),
+    url($path + "/GTAmerica/gtamerica-regular-webfont.woff2") format('woff2')
 }
