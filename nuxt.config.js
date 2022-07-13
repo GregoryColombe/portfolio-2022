@@ -24,10 +24,10 @@ export default {
   css: ['~assets/styles/main.scss'],
   styleResources: {
     scss: [
-      '~assets/styles/config/_variables.scss',
-      '~assets/styles/config/_fonts.scss',
-      '~assets/styles/config/_breakpoints.scss',
-      '~assets/styles/config/_mixins.scss'
+      '@/assets/styles/config/_variables.scss',
+      '@/assets/styles/config/_fonts.scss',
+      '@/assets/styles/config/_breakpoints.scss',
+      '@/assets/styles/config/_mixins.scss'
     ]
   },
   stylelint: {
