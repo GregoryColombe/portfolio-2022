@@ -1,6 +1,5 @@
 :root { 
   font-size: calc(100vw / 1280 * 10);
-  --vh: 1vh;
 }
 
 html,
@@ -10,9 +9,6 @@ html,
 }
 
 body {
-  min-height: 100vh;
-  min-height: calc(var(--vh, 1vh) * 100);
-
   margin: 0;
   padding: 0;
 
