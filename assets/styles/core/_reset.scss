@@ -141,3 +141,21 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+
+// Added
+button {
+  background: none;
+  border: none;
+
+  appearance: none;
+}
+
+a { 
+  color: white;
+  text-decoration: none;
+}
+
+video {
+  display: none;
+}

@@ -8,28 +8,21 @@ html,
   padding: 0;
 }
 
+html {
+  height: -webkit-fill-available;
+}
+
 body {
+  min-height: 100vh;
+  margin: 0;
+
+  padding: 0;
   overflow: hidden;
 
   color: white;
   font-family: 'GT America';
 }
 
-button {
-  background: none;
-  border: none;
-
-  appearance: none;
-}
-
-a { 
-  color: white;
-  text-decoration: none;
-}
-
-video {
-  display: none;
-}
 
 /* Avoid Chrome to see Safari hack */
 @supports (-webkit-touch-callout: none) {
@@ -38,7 +31,6 @@ video {
     min-height: 100vh;
   }
 }
-
 
 @include sm {
   :root {
