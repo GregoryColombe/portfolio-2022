@@ -18,7 +18,7 @@
 import Animations from '@/plugins/WebGL/Utils/Animations'
 
 export default {
-  name: 'Loader',
+  name: 'TheLoader',
   data () {
     return {
       endProgress: false,
@@ -82,12 +82,8 @@ export default {
 
 <style lang="scss" scoped>
 .loader {
-  display: flex;
-  flex-direction: column;
-
-  box-sizing: border-box;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 
   position: fixed;
   top: 0;
@@ -97,13 +93,6 @@ export default {
   background: black;
 
   &-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-
-    height: 100%;
 
     div {
       position: absolute;

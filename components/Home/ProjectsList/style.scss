@@ -1,19 +1,15 @@
 .project-list {
-    // position: relative;
+    position: absolute;
+    top: 0;
 
     display: none;
-    flex-direction: column;
-
-    // height: 100%;
-    height: calc(100% - 10vh);
-    margin-left: 5.2rem; 
-    overflow-y: scroll;
-
-    transform: translateY(10vh);
+    height: 100%; 
+    
+    margin-left: 5.2rem;
+    overflow: scroll;
 
     &-container {
-        display: flex;
-        flex-direction: column;
+        padding-top: 10vh;
 
         p {
             width: fit-content;
@@ -30,7 +26,12 @@
             transition: .3s;
             -webkit-text-stroke: 1px white;
 
+            &:first-of-type {
+                max-width: 0;
+            }
+
             &:hover {
+
                 color: white;
 
                 letter-spacing: .6rem;
@@ -44,19 +45,22 @@
 
 @include md { 
     .project-list {
+        align-items: flex-end;
         margin-left: 0;
 
         &-container {
-            position: absolute;
-            bottom: 0;
 
             p {
-                margin: 0.5rem 0;
+                margin: 1.25rem 0;
  
                 font-size: 3.6rem;
 
                 &:hover {
                     letter-spacing: .1rem;
+                }
+
+                &:last-of-type {
+                    margin-bottom: 3.2rem;
                 }
             }
         }

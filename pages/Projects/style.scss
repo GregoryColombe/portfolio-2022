@@ -1,8 +1,6 @@
 .projects {
     position: relative;
 
-    height: 100%;
-
     color: black;
 
     &-closeBtn {
@@ -17,7 +15,6 @@
 
         &:hover {
             transform: scale(1.2);
-            // transform: scale(1.2) rotate(90deg);
             cursor: pointer;
         }
     }

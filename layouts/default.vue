@@ -1,9 +1,9 @@
 <template>
   <div class="portfolio">
-    <Loader />
+    <TheLoader />
 
     <Header />
-    <Nuxt />
+    <Nuxt class="portfolio--container"/>
     <IconsNetworks />
 
     <WebGLBackground />
@@ -28,7 +28,7 @@ export default {
   methods: {
     initHeightPage () {
       const vh = window.innerHeight * 0.01
-      document.documentElement.style.setProperty('--vh', `${ vh }px`)
+      document.documentElement.style.setProperty('--vh', `${vh}px`)
     }
   }
 }

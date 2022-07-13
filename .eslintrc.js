@@ -12,6 +12,12 @@ module.exports = {
     '@nuxtjs',
     'plugin:nuxt/recommended'
   ],
-  plugins: [],
-  rules: {}
+  plugins: [
+  ],
+  // add your custom rules here
+  rules: {
+    'no-console': 'off',
+    'vue/multi-word-component-names': 'off',
+    'no-useless-constructor': 'off'
+  }
 }
