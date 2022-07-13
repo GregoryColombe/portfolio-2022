@@ -1,6 +1,4 @@
 .header {
-    z-index: 2;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -12,6 +10,8 @@
         &-item {
             display: inherit;
             margin-left: 2rem;
+
+            > button { z-index: 1; }
 
             > p {
                 width: fit-content;
@@ -64,6 +64,8 @@
                 }
             }
         }
+
+        &:last-of-type {z-index: 1;}
     }
 }
 
