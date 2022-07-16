@@ -26,8 +26,8 @@ export default class PostProcessing {
     this.composer.addPass(pass)
 
     this.params = {
-      exposure: 1,
-      bloomStrength: 1.15,
+      exposure: 0.8,
+      bloomStrength: 1,
       bloomThreshold: 0,
       bloomRadius: 0.2
     }
@@ -56,6 +56,6 @@ export default class PostProcessing {
 
   update () {
     this.composer.render()
-    window.$nuxt.$store.state.webgl.bloomActive === false ? this.setBloomStrengthAnim(3, 0.14) : this.setBloomStrengthAnim(3, 1.15)
+    window.$nuxt.$store.state.webgl.bloomActive === false ? this.setBloomStrengthAnim(3, 0.14) : this.setBloomStrengthAnim(3, 1)
   }
 }

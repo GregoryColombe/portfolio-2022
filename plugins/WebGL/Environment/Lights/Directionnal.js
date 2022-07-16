@@ -17,7 +17,7 @@ export default class Box {
   }
 
   _setInstance () {
-    this.instance = new DirectionalLight(0xFFFAD2, 0.45)
+    this.instance = new DirectionalLight(0xFFFAD2, 1)
     this.instance.castShadow = true
     this.instance.lookAt(new Vector3())
 

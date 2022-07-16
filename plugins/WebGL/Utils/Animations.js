@@ -2,32 +2,19 @@ import { gsap } from 'gsap'
 
 export default class Animations {
   constructor () {
-    this.fadeEnded = false
   }
 
   // UI
-  fade (type) {
+  fadeIn () {
     const projectList = document.querySelector('.project-list')
     const homeButton = document.querySelector('.home-button > button')
 
     const tl = gsap.timeline({
       onStart: () => {
-        this.fadeEnded = false
         projectList.style.display = 'flex'
         projectList.style.opacity = 0
       },
-
-      onReverseComplete: () => {
-        homeButton.style.opacity = 1
-        projectList.style.opacity = 1
-        projectList.style.display = 'none'
-
-        this.fadeEnded = false
-      },
-
-      onComplete: () => {
-        this.fadeEnded = true
-      }
+      onComplete: () => { homeButton.style.display = 'none' }
     })
 
     tl.to(homeButton, {
@@ -36,18 +23,35 @@ export default class Animations {
       ease: 'power4.easeOut',
       opacity: 0
     })
-      .from(projectList, {
+      .to(projectList, {
         duration: 1,
-        y: 100,
+        y: 0,
         ease: 'power4.easeOut',
-        opacity: 0
+        opacity: 1
       })
+  }
 
-    if (type === 'in') {
-      tl.play()
-    } else if (type === 'out') {
-      tl.reverse(0)
-    }
+  fadeOut () {
+    const projectList = document.querySelector('.project-list')
+    const homeButton = document.querySelector('.home-button > button')
+
+    const tl = gsap.timeline({
+      onStart: () => { homeButton.style.display = 'block' },
+      onComplete: () => { projectList.style.display = 'none' }
+    })
+
+    tl.to(projectList, {
+      duration: 1,
+      y: 100,
+      ease: 'power4.easeOut',
+      opacity: 0
+    })
+      .to(homeButton, {
+        duration: 0.5,
+        y: 0,
+        ease: 'power4.easeOut',
+        opacity: 1
+      })
   }
 
   loaderFadeIn () {

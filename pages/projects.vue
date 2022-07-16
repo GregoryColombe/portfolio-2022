@@ -10,7 +10,7 @@
 
       <a :href="projectData[projectNumber].href" target="_blank">
         <button>
-          <p v-text="projectData[projectNumber].textBtn">Visit the site</p>
+          <p v-text="projectData[projectNumber].textBtn" />
         </button>
       </a>
     </div>
@@ -84,7 +84,7 @@ export default {
       this.animations.closeDoor(this.webgl.environment.door.instance, this.webgl.camera.instance)
 
       setTimeout(() => {
-        this.animations.fade('in')
+        this.animations.fadeIn()
       }, 800)
     },
 

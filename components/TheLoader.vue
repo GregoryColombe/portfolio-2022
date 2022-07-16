@@ -3,8 +3,12 @@
     <div v-if="!endProgress" class="loader">
       <div class="loader-container">
         <div>
-          <p v-if="activeCloseLoader">
+          <p v-if="progress === 100">
             Click anywhere to start
+          </p>
+
+          <p v-else>
+            Loading
           </p>
 
           <p>{{ progress }}<span> %</span></p>
@@ -22,7 +26,6 @@ export default {
   data () {
     return {
       endProgress: false,
-      activeCloseLoader: false,
       animations: new Animations()
     }
   },
@@ -40,7 +43,6 @@ export default {
   watch: {
     progress (newValue) {
       if (newValue === 100) {
-        this.activeCloseLoader = true
         this.addClickEvent()
       }
     },
@@ -55,13 +57,9 @@ export default {
   },
 
   methods: {
-    start () {
-      this.$store.commit('webgl/startLoading')
-    },
+    start () { this.$store.commit('webgl/startLoading') },
 
-    finish () {
-      this.$store.commit('webgl/endLoading')
-    },
+    finish () { this.$store.commit('webgl/endLoading') },
 
     playAudio () {
       this.$store.commit('webgl/setSoundActive', true)

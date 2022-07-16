@@ -26,7 +26,7 @@ export default {
   methods: {
     onClick () {
       this.$store.commit('webgl/setWorks', !this.works)
-      this.works ? this.animations.fade('in') : this.animations.fade('out')
+      this.works ? this.animations.fadeIn() : this.animations.fadeOut()
     }
   }
 }

@@ -41,7 +41,7 @@ export default class Door {
   }
 
   openDoor () {
-    this.animations.fade('out')
+    this.animations.fadeOut()
 
     setTimeout(() => {
       this.animations.openDoor(this.instance, this._webgl.camera.instance)
@@ -55,11 +55,6 @@ export default class Door {
 
   closeDoor () {
     this.animations.closeDoor(this.instance, this._webgl.camera.instance)
-
-    // Show projects UI
-    // setTimeout(() => {
-    //   this.animations.fade('in')
-    // }, 800)
   }
 
   _setPosition (position) {

@@ -2,8 +2,8 @@
   <div class="portfolio">
     <TheLoader />
 
-    <Header />
-    <Nuxt class="portfolio--container"/>
+    <TheHeader />
+    <Nuxt class="portfolio--container" />
     <IconsNetworks />
 
     <WebGLBackground />

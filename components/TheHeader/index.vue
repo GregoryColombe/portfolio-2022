@@ -35,8 +35,7 @@ import Animations from '@/plugins/WebGL/Utils/Animations'
 import IconSound from '@/components/Icons/IconSound'
 
 export default {
-  name: 'Header',
-
+  name: 'TheHeader',
   components: {
     IconSound
   },
@@ -72,7 +71,7 @@ export default {
 
     onClick () {
       this.$store.commit('webgl/setWorks', !this.works)
-      this.works ? this.animations.fade('in') : this.animations.fade('out')
+      this.works ? this.animations.fadeIn() : this.animations.fadeOut()
     },
 
     changeColor (color) {
