@@ -11,7 +11,7 @@
             display: inherit;
             margin-left: 2rem;
 
-            > button { z-index: 1; }
+            * { z-index: 1; }
 
             > p {
                 width: fit-content;
@@ -35,7 +35,7 @@
 
             &--name {
                 position: relative;
-                z-index: 3;
+                z-index: 2;
 
                 text-align: left;
 
@@ -59,16 +59,12 @@
                     cursor: pointer;
 
                     span {
-                       
                     }
                 }
             }
         }
-
-        &:last-of-type {z-index: 1;}
     }
 }
-
 
 @include sm { 
     .header {

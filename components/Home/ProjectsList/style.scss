@@ -50,6 +50,7 @@
 @include md { 
     .project-list {
         align-items: flex-end;
+        width: initial;
         margin-left: 0;
 
         &-container {
